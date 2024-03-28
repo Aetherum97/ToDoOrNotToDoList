@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <div class="fixed">
+      <nav>
+        <div class="navbar">
+          <div class="logo"><h1>ToDoOrNotToDo</h1></div>
+          <div class="btn-login">
+            <a href="login.html"
+              ><p class="btn-off"><i class="fa-solid fa-power-off"></i></p
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="day">Yesterday</div>
+        <span><i class="fa-solid fa-arrow-left arrow-left"></i></span>
+        <div class="flex">
+          <div class="day">Today</div>
+          <span id="add-btn"
+            ><i class="fa-solid fa-circle-plus add-btn"></i
+          ></span>
+        </div>
+        <span><i class="fa-solid fa-arrow-right arrow-right"></i></span>
+        <div class="day">Tomorrow</div>
+      </header>
+    </div>
+    <div class="list">
+      <section id="left-section">
+        <div class="post-it">
+          <div class="text" contenteditable="true">lore</div>
+        </div>
+      </section>
+      <div class="vertical-bar"></div>
+      <section id="middle-section"></section>
+      <div class="vertical-bar"></div>
+      <section id="right-section">
+        <div class="post-it">
+          <div class="text" contenteditable="true">
+            Lorem ipsum
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-flex">
+        <span><i class="fa-solid fa-arrow-left arrow-left"></i></span>
+        <div class="flex">
+          <div class="day">Today</div>
+          <span id="add-btn-mobile"
+            ><i class="fa-solid fa-circle-plus add-btn"></i
+          ></span>
+        </div>
+        <span><i class="fa-solid fa-arrow-right arrow-right"></i></span>
+      </div>
+    </footer>
+    <script src="assets/scripts/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4a518c6ff2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

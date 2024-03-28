@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register ToDoList</title>
+    <link rel="stylesheet" href="assets/css/register.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo"><h1>ToDoOrNotToDo</h1></div>
+        <div class="btn-login">
+          <a href="login.html"
+            ><p class="btn-off"><i class="fa-solid fa-power-off"></i></p
+          ></a>
+        </div>
+      </div>
+    </nav>
+    <div class="register-box">
+      <div class="register">
+        <h2>S'enregistrer</h2>
+        <div class="bar-zone"></div>
+        <form>
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br />
+          <label for="pin">PIN:</label><br />
+          <input
+            type="password"
+            id="pin"
+            name="pin"
+            required
+            maxlength="4"
+          /><br />
+          <label for="confirmPin">Confirm PIN:</label><br />
+          <input
+            type="password"
+            id="confirmPin"
+            name="confirmPin"
+            required
+            maxlength="4"
+          /><br />
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/4a518c6ff2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
