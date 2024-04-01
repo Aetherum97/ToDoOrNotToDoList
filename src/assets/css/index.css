@@ -180,7 +180,7 @@ span {
 
 .shuffle-icon {
     margin-left: 2px;
-    cursor: pointer;
+    cursor: move;
 }
 
 .rename-post {
