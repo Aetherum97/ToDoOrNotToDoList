@@ -5,6 +5,35 @@ export default class Note {
     this.status = status || "";
   }
 
+  initializePostItFeatures = (postIt) => {
+    const checkBtn = postIt.querySelector(".check-icon");
+    const editText = postIt.querySelector(".text");
+    const removePostIt = postIt.querySelector(".fa-trash");
+
+    checkBtn.onclick = () => {
+      editText.style.textDecoration = "line-through";
+    };
+
+    const oncheckBtn = postIt.querySelector(".fa-x");
+    oncheckBtn.onclick = () => {
+      editText.style.textDecoration = "none";
+    };
+
+    removePostIt.onclick = () => {
+      postIt.remove();
+    };
+  };
+
+  addPostItActive = (postIt) => {
+    postIt.addEventListener("click", () => {
+      const renamePost = postIt.querySelector(".rename-post");
+      if (renamePost) {
+        renamePost.classList.add("rename-post-display-flex");
+        postIt.style.backgroundColor = "rgb(147, 147, 245)";
+      }
+    });
+  };
+  
   render() {
     return (
     `
@@ -24,3 +53,6 @@ export default class Note {
     `);
   }
 }
+
+
+

@@ -1,5 +1,5 @@
 // Ajout fonction icon post it active
-function initializePostItFeatures(postIt) {
+let initializePostItFeatures = (postIt) => {
   const checkBtn = postIt.querySelector(".check-icon");
   const editText = postIt.querySelector(".text");
   const removePostIt = postIt.querySelector(".fa-trash");
@@ -19,7 +19,7 @@ function initializePostItFeatures(postIt) {
 }
 
 // Transformation onclick du post it
-let addPostItEventListener = () => {
+let addPostItActive = () => {
   const postItList = document.querySelectorAll(".post-it");
 
   postItList.forEach((postIt) => {
@@ -56,7 +56,7 @@ userAddPost.onclick = () => {
   setTimeout(() => {
     newPostIt.classList.add("fade-in");
     initializePostItFeatures(newPostIt);
-    addPostItEventListener();
+    addPostItActive();
   }, 100);
   const firstChild = middleSection.firstChild;
   middleSection.insertBefore(newPostIt, firstChild);
