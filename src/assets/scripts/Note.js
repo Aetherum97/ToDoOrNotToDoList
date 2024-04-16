@@ -6,7 +6,8 @@ export default class Note {
   }
 
   render() {
-    let html = `
+    return (
+    `
       <div class="post-it ${this.status}" id="note-${this.id}">
         <div class="text" contenteditable="true"> ${this.text}</div><div class="rename-post">
         <div class="shuffle-icon">
@@ -20,6 +21,6 @@ export default class Note {
   </div>
   </div>
     </div>
-    `;
+    `);
   }
 }
