@@ -3,13 +3,22 @@ import Note from "./Note.js";
 
 const liste1 = new Liste(1, "Date");
 
-let listJS = document.getElementById("middle-section");
+const listJS = document.getElementById("middle-section");
 
 // Ajout tache (version Pc)
 const userAddPost = document.getElementById("add-btn");
 
+const myTask = {
+  id: 1,
+  text: "Nouvelle tâche",
+  status: "",
+};
+
+const middleList = new Liste(myTask);
+middleList.setSection(document.getElementById("middle-section"));
+
 userAddPost.onclick = () => {
-  const newNote = new Note(listJS.children.length + 1, "Nouvelle tâche");
+  const newNote = new Note(myTask);
   listJS.innerHTML += newNote.render();
 };
 

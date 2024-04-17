@@ -1,7 +1,22 @@
 export default class Liste {
-  constructor(id, date, notes) {
-    this.id = id;
-    this.date = date;
-    this.notes = notes;
+  constructor() {
+    this.id = this.generateId();
+    listArray = new Array();
   }
+  addTask() {
+    
+  }
+
+  removeTask() {
+
+  }
+
+  editableTask() {
+    
+  }
+  setSection(section) {
+    const documentSection = section;
+  };
+
+
 }
