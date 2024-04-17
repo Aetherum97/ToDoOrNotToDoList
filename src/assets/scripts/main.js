@@ -9,7 +9,7 @@ let listJS = document.getElementById("middle-section");
 const userAddPost = document.getElementById("add-btn");
 
 userAddPost.onclick = () => {
-    const newNote = new Note(listJS.children.length + 1, "Nouvelle tâche");
+  const newNote = new Note(listJS.children.length + 1, "Nouvelle tâche");
   listJS.innerHTML += newNote.render();
 };
 
@@ -18,6 +18,6 @@ userAddPost.onclick = () => {
 const userAddPostMobile = document.getElementById("add-btn-mobile");
 
 userAddPostMobile.onclick = () => {
-    const newNote = new Note(listJS.children.length + 1, "Nouvelle tâche");
-    listJS.innerHTML += newNote.render();
-}
+  const newNote = new Note(listJS.children.length + 1, "Nouvelle tâche");
+  listJS.innerHTML += newNote.render();
+};
