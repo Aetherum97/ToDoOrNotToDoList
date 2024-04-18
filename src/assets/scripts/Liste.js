@@ -1,7 +1,7 @@
 export default class Liste {
-  constructor() {
-    this.id = this.generateId();
-    listArray = new Array();
+  constructor(id) {
+    this.id = id;
+    
   }
   addTask() {
     
