@@ -9,7 +9,7 @@ const listJS = document.getElementById("middle-section");
 const userAddPost = document.getElementById("add-btn");
 
 const myTask = {
-  id: 1,
+  id: 0,
   text: "Nouvelle tâche",
   status: "",
 };
@@ -22,11 +22,14 @@ userAddPost.onclick = () => {
   listJS.innerHTML += newNote.render();
 };
 
+const newNote = new Note(myTask);
+
+console.log(newNote);
 // Ajout tache (version mobile)
 
 const userAddPostMobile = document.getElementById("add-btn-mobile");
 
 userAddPostMobile.onclick = () => {
-  const newNote = new Note(listJS.children.length + 1, "Nouvelle tâche");
+  const newNote = new Note(myTask);
   listJS.innerHTML += newNote.render();
 };

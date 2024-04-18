@@ -1,10 +1,19 @@
+import GenerateId from "./GenerateId.js";
+
+const idGenerator = new GenerateId();
+
 export default class Note {
-  constructor(id, text, status) {
-    this.id = id;
+  constructor(text, status) {
+    this.id = idGenerator.generateId();
     this.text = text;
     this.status = status || "";
   }
 
+  editableTask() {
+    // TODO Ajouter le post-it active
+  }
+
+  
 
   render() {
    let html =
